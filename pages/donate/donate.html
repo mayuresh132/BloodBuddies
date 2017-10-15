@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Signup
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding id="page5">
+
+
+  <form #form="ngForm" (ngSubmit)="donateData(form)" novalidate>
+    <ion-list id="signup-list3">
+      <ion-item id="signup-input3">
+        
+        <ion-label>
+          Name
+        </ion-label>
+        <ion-input type="text" required name="DonarName" [(ngModel)]="todo.DonarName" ngControl="DonarName"></ion-input>
+      </ion-item>
+     
+     
+      <ion-item id="signup-input4">
+        <ion-label>
+          Mobile No
+        </ion-label>
+        <ion-input type="tel" required name="Mobile_No" [(ngModel)]="todo.Mobile_No" ngControl="Mobile_No"></ion-input>
+      </ion-item>
+
+      <ion-item id="signup-input5">
+          <ion-label>
+            Mobile No2
+          </ion-label>
+          <ion-input type="tel" name="Mobile_No2"  [(ngModel)]="todo.Mobile_No2" ngControl="Mobile_No2"></ion-input>
+        </ion-item>
+     
+      <ion-item id="signup-input6">
+        <ion-label>
+          Area / Village
+        </ion-label>
+        <ion-input type="text" name="Villege" [(ngModel)]="todo.Villege" ngControl="Villege"></ion-input>
+      </ion-item>
+      <ion-item id="signup-select2">
+        <ion-label>
+          City / Taluka
+        </ion-label>
+        <ion-select name="CityName" name="City" [(ngModel)]="todo.City" ngControl="City">
+          <ion-option>
+            Sawantwadi
+          </ion-option>
+          <ion-option>
+            Kudal
+          </ion-option>
+          <ion-option>
+            Kankavali
+          </ion-option>
+          <ion-option>
+            Vengurla
+          </ion-option>
+          <ion-option>
+            Dodamarg
+          </ion-option>
+          <ion-option>
+            Devgad
+          </ion-option>
+          <ion-option>
+            Malvan
+          </ion-option>
+          <ion-option>
+            Vaibhavwadi
+          </ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-item id="signup-select1">
+      <ion-label>
+        Blood Group
+      </ion-label>
+      <ion-select name="BloodGroup" name="BloodGroup" [(ngModel)]="todo.BloodGroup" ngControl="BloodGroup">
+        <ion-option>
+          A +ve
+        </ion-option>
+        <ion-option>
+          A -ve
+        </ion-option>
+        <ion-option>
+          B +ve
+        </ion-option>
+        <ion-option>
+          B -ve
+        </ion-option>
+        <ion-option>
+          AB +ve
+        </ion-option>
+        <ion-option>
+          AB -ve
+        </ion-option>
+        <ion-option>
+          O +ve
+        </ion-option>
+        <ion-option>
+          O -ve
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <div class="spacer" style="height:40px;" id="searchDonar-spacer3"></div>
+    <button id="searchDonar-button1" ion-button color="dark" block>
+      Register
+    </button>
+  </form>
+</ion-content>
